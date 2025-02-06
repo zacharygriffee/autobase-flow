@@ -1,0 +1,41 @@
+{
+  "name": "autobase-flow",
+  "version": "1.0.0",
+  "description": "A high-level Autobase wrapper with a dynamic operator pipeline.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test": "brittle ./test.js",
+    "bare:test": "bare ./test.js"
+  },
+  "private": false,
+  "dependencies": {
+    "autobase": "^6.5.13",
+    "b4a": "^1.6.7",
+    "operator-pipeline": "^1.0.2",
+    "z32": "^1.1.0"
+  },
+  "devDependencies": {
+    "brittle": "^3.10.0",
+    "corestore": "^6.18.4",
+    "random-access-memory": "^6.2.1",
+    "rxjs": "^7.8.1"
+  },
+  "keywords": [
+    "autobase",
+    "hypercore",
+    "pipeline",
+    "p2p",
+    "operator",
+    "flow"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zacharygriffee/autobase-flow.git"
+  },
+  "author": "Zachary Griffee",
+  "license": "MIT"
+}
