@@ -27,6 +27,7 @@ const createAutobaseWithPipeline = ({
                                         key,
                                         view,
                                         autobaseEncoding = "json",
+                                        valueEncoding = autobaseEncoding,
                                         initialOperators = []
                                     }) => {
     if (typeof getCorestore !== "function") {
@@ -62,7 +63,7 @@ const createAutobaseWithPipeline = ({
             }
         },
         apply: async (updates, view, base) => await processUpdates({ updates, nodes: updates, view, base }),
-        valueEncoding: autobaseEncoding
+        valueEncoding
     });
 
     // Queue for sequential operations
