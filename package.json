@@ -15,7 +15,7 @@
   "dependencies": {
     "autobase": "^6.5.13",
     "b4a": "^1.6.7",
-    "operator-pipeline": "^1.0.2",
+    "operator-pipeline": "^1.0.6",
     "z32": "^1.1.0"
   },
   "devDependencies": {
