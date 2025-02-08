@@ -184,4 +184,4 @@ const createAutobaseWithPipeline = ({
     };
 };
 
-export { createAutobaseWithPipeline };
+export { createAutobaseWithPipeline, createAutobaseWithPipeline as createAutobaseFlow };

@@ -20,9 +20,9 @@ npm install autobase-flow
 ### Creating an Autobase Instance
 
 ```javascript
-import { createAutobaseWithPipeline } from "autobase-flow";
+import { createAutobaseFlow } from "autobase-flow";
 
-const autobaseInstance = createAutobaseWithPipeline({
+const autobaseInstance = createAutobaseFlow({
   getCorestore: () => myCorestoreInstance, // Function returning a Corestore
   key: "your-autobase-key", // Optional Z32-encoded string or Buffer
   view: { myView: "json" }, // Single view as an object
@@ -36,7 +36,7 @@ const autobaseInstance = createAutobaseWithPipeline({
 Autobase Flow supports multiple views, allowing you to define multiple perspectives on the data:
 
 ```javascript
-const autobaseInstance = createAutobaseWithPipeline({
+const autobaseInstance = createAutobaseFlow({
   getCorestore: () => myCorestoreInstance,
   view: {
     mainView: "json",
@@ -47,7 +47,7 @@ const autobaseInstance = createAutobaseWithPipeline({
 
 ### API
 
-#### `createAutobaseWithPipeline(config)`
+#### `createAutobaseFlow(config)`
 
 Creates and returns an Autobase instance with pipeline utilities.
 
